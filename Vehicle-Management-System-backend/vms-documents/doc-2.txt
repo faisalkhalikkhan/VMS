@@ -1,0 +1,31 @@
+Requirements
+
+SignUp Page
+	Full Name
+	userName
+	email
+	mobile
+	password
+
+LogIN Page
+	email
+	password
+	
+Landing Page
+
+Dashboard:
+	Total number of entries vehicle today.
+	Total number of lots avilable.
+	Total number of slots available.
+	Total exits today.
+	
+Dashboard Features:
+	Make Parking lots.
+		Add
+		Delete
+		Update
+	View Available Slots.
+	Add Vehicles.
+	Remove Vehicle.
+	
+	

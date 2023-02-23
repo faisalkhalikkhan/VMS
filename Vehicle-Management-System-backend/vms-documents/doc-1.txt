@@ -1,0 +1,37 @@
+CHARACTER : Admin, vehicle
+
+Admin:
+He can add parking lots can also perform CURD operations. 
+He can divide multiple slots of parking lot.
+He can also define parking lot categories such as 2-wheeler or 4-wheeler or 6-wheeler.
+He can set charges on vehicle per minutes or hours.
+
+Once it define all above, then each slot should have its unique ID, It will help us to track which slot is available and all that stuff.
+
+Admin:
+	adminID.
+	user-name
+	email
+	password
+	
+Parking-Lot:
+	LotID.
+	Number Of Slots.
+	Lot-type.
+	create-date.
+	update-date.
+	charge/minutes.
+	minimum charge.
+	adminID.
+	
+Parking-Slot:
+	slotID.
+	lotID.
+	vehicle-number.
+
+vehicle: 
+	Vehicle number
+	Entry time
+	Exit time
+	Fees
+	Parking slot id
