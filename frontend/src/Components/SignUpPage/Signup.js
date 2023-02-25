@@ -2,13 +2,16 @@ import React from "react";
 import "./sup.css";
 import { FaUserAlt } from "react-icons/fa";
 import { RiLockPasswordFill, RiLoginCircleLine } from "react-icons/ri";
+import { useNavigate} from 'react-router-dom'
 
 const Signup = () => {
+
+  const navigate = useNavigate()
   return (
     <div className="container">
       <div className="screen">
         <div className="screen__content">
-          <div className="login_redirect">
+          <div className="login_redirect" onClick={() => navigate('/')}>
             <h3>SignIn</h3>
           </div>
           <form className="login">

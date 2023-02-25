@@ -7,8 +7,9 @@ import { FaCashRegister } from "react-icons/fa";
 import { CiBookmarkRemove } from "react-icons/ci";
 import { ImEnlarge2 } from "react-icons/im";
 import { Avatar, Popover } from "antd";
+import Home from "../Home/Home";
 
-const Dashboard = () => {
+const Dashboard = ({user}) => {
   const [toggle, setToggle] = useState(false);
   return (
     <div className="dashboard">
@@ -22,7 +23,7 @@ const Dashboard = () => {
               icon={<ImEnlarge2 />}
               onClick={() => setToggle(false)}
             />
-            <h2>Dashboard</h2>
+            <h2>{user.name}</h2>
             <span className="divider_span"></span>
           </div>
           <div className="dashboard_side_main">
@@ -55,7 +56,7 @@ const Dashboard = () => {
               }}
               size={70}
             >
-              Dashboard
+              {user.name}
             </Avatar>
             <span className="divider_min"></span>
           </div>
@@ -97,7 +98,7 @@ const Dashboard = () => {
         </div>
       )}
       <div className="dashboard_main">
-        
+        <Home fWidth={toggle} />
       </div>
     </div>
   );
