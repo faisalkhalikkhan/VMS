@@ -20,7 +20,7 @@ const ParkingLotForm = () => {
   };
   return (
     <div className="parking_lot_form">
-        <h2>Parking Lot Form</h2>
+      <h2>Parking Lot Form</h2>
       <Form
         name="basic"
         labelCol={{

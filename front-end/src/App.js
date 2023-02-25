@@ -5,9 +5,10 @@ import { Route, Routes } from "react-router-dom";
 import 'antd/dist/reset.css';
 
 import { About, CTA, Header, Navbar, Footer } from "./components";
-import { Login, Register, Home } from "./pages";
+import { Login, Register } from "./pages";
 import Dashboard from "./components/Dashboard/Dashboard";
 import ParkingLotForm from "./components/ParkingLotForm/ParkingLotForm";
+import BillBoard from "./components/BillBoard/BillBoard";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/signup" element={<Register />} />
           <Route path="/home" element={<Dashboard /> } />
           <Route path="/create-parking-lot-form" element={<ParkingLotForm />} />
+          <Route path="/generate-bill" element={<BillBoard />} />
           </Routes>
         </div>
       
