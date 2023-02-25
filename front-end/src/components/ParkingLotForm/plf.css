@@ -1,0 +1,11 @@
+.parking_lot_form {
+    width: 50vw;
+    height: 70vh;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
